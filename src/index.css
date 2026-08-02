@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-warm-white text-ink font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display text-navy;
+}
+
+::selection {
+  background-color: #166534;
+  color: #fff;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+/* Underline hover for nav links */
+.nav-link {
+  @apply relative text-sm font-medium tracking-wide transition-colors;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #F97316;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #166534;
+  outline-offset: 2px;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF8;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd2d9;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa4af;
+}
