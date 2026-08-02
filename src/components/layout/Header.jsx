@@ -35,7 +35,7 @@ export default function Header() {
       <Container className="flex items-center justify-between h-20">
         <Link to="/" className="flex flex-col leading-none shrink-0">
           <span className="font-display text-xl sm:text-2xl font-extrabold tracking-tight">
-            <span className={solid ? 'text-navy' : 'text-white'}>USHA</span>
+            <span className={solid ? 'text-navy' : 'text-white'}>USH</span>
             <span className="text-industrial-orange">A</span>
           </span>
           <span className={`mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] ${solid ? 'text-ink-sub' : 'text-white/70'}`}>

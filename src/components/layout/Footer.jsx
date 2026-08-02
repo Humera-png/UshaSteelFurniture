@@ -10,7 +10,7 @@ export default function Footer() {
       <Container className="py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
           <div className="font-display text-2xl font-extrabold leading-none mb-4">
-            <span className="text-white">USHA</span>
+            <span className="text-white">USH</span>
             <span className="text-industrial-orange">A</span>
           </div>
           <p className="text-sm uppercase tracking-[0.15em] text-white/50 mb-4">{site.tagline}</p>
